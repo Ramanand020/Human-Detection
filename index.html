@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Detection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <h1>Vision<span>AI</span></h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <span class="icon">🏠</span> Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📊</span> Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙️</span> Settings
+                </a>
+            </nav>
+            
+            <div class="status-card">
+                <p>System Status</p>
+                <div class="status-indicator">
+                    <span class="pulse"></span> Online
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search activities...">
+                </div>
+                <div class="user-profile">
+                    <div class="notification-icon">🔔</div>
+                    <div class="avatar"></div>
+                </div>
+            </header>
+
+            <section class="dashboard-grid">
+                <!-- Video Stream Card -->
+                <div class="card video-card">
+                    <div class="card-header">
+                        <h2>Live Stream</h2>
+                        <div class="live-badge">LIVE</div>
+                    </div>
+                    <div class="video-container">
+                        <img id="videoStream" src="http://localhost:8000/video_feed" alt="Video Stream">
+                    </div>
+                </div>
+
+                <!-- Stats Panel -->
+                <div class="stats-panel">
+                    <div class="card stat-card">
+                        <h3>Active Detection</h3>
+                        <div class="stat-value" id="personCount">0</div>
+                        <p class="stat-label">People Detected</p>
+                    </div>
+
+                    <div class="card stat-card accent">
+                        <h3>Model Confidence</h3>
+                        <div class="stat-value">94.8%</div>
+                        <p class="stat-label">Average Accuracy</p>
+                    </div>
+
+                    <div class="card activity-log">
+                        <h3>System Log</h3>
+                        <div class="log-entries" id="logEntries">
+                            <div class="log-entry">System started successfully.</div>
+                            <div class="log-entry">YOLOv8s model loaded.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
