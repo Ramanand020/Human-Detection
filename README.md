@@ -1,7 +1,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8-blue)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-green)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-red)
-# 🧠 Human Detection Dashboard using YOLOv8 + FastAPI
+# 🧠 Human Detection  using YOLOv8 + FastAPI
 
 A real-time Human Detection System powered by YOLOv8, with a modern web dashboard to visualize live video feed and detection statistics.
 
@@ -48,8 +48,8 @@ human-detection-project/
 ## ⚙️ Installation
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/human-detection-dashboard.git
-cd human-detection-dashboard
+git clone https://github.com/Ramanand020/Human-Detection.git
+cd Human-Detection
 ```
 ### 2️⃣ Create virtual environment (recommended)
 ```bash
